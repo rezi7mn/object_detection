@@ -6,6 +6,7 @@ from msrest.authentication import CognitiveServicesCredentials
 from array import array
 import os
 from PIL import Image
+import streamlit as st
 import sys
 import time
 
@@ -41,7 +42,7 @@ def detect_objects(filepath):
     objects = detect_objects_results.objects
     return objects
 
-import streamlit as st
+
 from PIL import ImageDraw
 from PIL import ImageFont
 
