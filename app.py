@@ -11,11 +11,14 @@ import time
 
 import json
 
-with open('secret.json') as f:
-    secret = json.load(f)
+'''localで動かすときはsecret.jsonからキーとエンドポイントを読み込む'''
+# with open('secret.json') as f:
+#     secret = json.load(f)
+# KEY = secret['KEY']
+# ENDPOINT = secret['ENDPOINT']
 
-KEY = secret['KEY']
-ENDPOINT = secret['ENDPOINT']
+KEY = st.secrets['KEY']
+ENDPOINT = st.secrets['ENDPOINT']
 
 # key,endpoint渡して認証
 computervision_client = ComputerVisionClient(ENDPOINT, CognitiveServicesCredentials(KEY))
