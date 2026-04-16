@@ -11,7 +11,7 @@ import time
 
 import json
 
-'''localで動かすときはsecret.jsonからキーとエンドポイントを読み込む'''
+# localで動かすときはsecret.jsonからキーとエンドポイントを読み込む
 # with open('secret.json') as f:
 #     secret = json.load(f)
 # KEY = secret['KEY']
