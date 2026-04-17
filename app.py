@@ -6,13 +6,11 @@ from azure.ai.vision.imageanalysis.models import VisualFeatures
 from azure.core.credentials import AzureKeyCredential
 
 # 認証情報の取得
-# KEY = st.secrets['EVtYjUni4zXoisvf3JkaU7L1pBjYyAT5hRyAnsFd5cNG0CyYzMl9JQQJ99CDACYeBjFXJ3w3AAAFACOGFRuv']
-# ENDPOINT = st.secrets['https://ai-image-detection.cognitiveservices.azure.com/']
 try:
     KEY = st.secret['KEY']
     ENDPOINT = st.secrets['ENDPOINT']
 except KeyError:
-    print("Missing environment variable 'VISION_ENDPOINT' or 'VISION_KEY'")
+    print("Missing environment variable 'ENDPOINT' or 'KEY'")
     print("Set them before running this sample.")
     exit()
 
