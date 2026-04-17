@@ -7,7 +7,7 @@ from azure.core.credentials import AzureKeyCredential
 
 # 認証情報の取得
 try:
-    KEY = st.secret['KEY']
+    KEY = st.secrets['KEY']
     ENDPOINT = st.secrets['ENDPOINT']
 except KeyError:
     print("Missing environment variable 'ENDPOINT' or 'KEY'")
