@@ -1,4 +1,4 @@
-azure-cognitiveservices-vision-computervision
-msrest
+azure-ai-vision-imageanalysis
+azure-core
 pillow
 streamlit
